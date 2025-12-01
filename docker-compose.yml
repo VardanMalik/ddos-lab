@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  victim:
+    build: ./victim
+    container_name: victim
+    networks:
+      ddosnet:
+        ipv4_address: 10.5.0.10
+    ports:
+      - "8080:80"
+
+  defender:
+    build: ./defender
+    container_name: defender
+    privileged: true
+    networks:
+      ddosnet:
+        ipv4_address: 10.5.0.20
+    ports:
+      - "8090:80"
+
+  attacker1:
+    build: ./attacker
+    container_name: attacker1
+    networks:
+      ddosnet:
+        ipv4_address: 10.5.0.30
+
+  attacker2:
+    build: ./attacker
+    container_name: attacker2
+    networks:
+      ddosnet:
+        ipv4_address: 10.5.0.40
+
+networks:
+  ddosnet:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.5.0.0/24

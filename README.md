@@ -4,7 +4,7 @@ This project implements a small Docker-based testbed to study HTTP flood behavio
 
 ## 1. Project structure
 
-```text
+text
 ddos-lab/
   docker-compose.yml
   attacker/

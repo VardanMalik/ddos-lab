@@ -4,7 +4,7 @@ This project implements a small Docker-based testbed to study HTTP flood behavio
 
 ## 1. Project structure
 
-text
+```text
 ddos-lab/
   docker-compose.yml
   attacker/
@@ -18,10 +18,11 @@ ddos-lab/
   victim/
     Dockerfile
     index.html
-  captures/        (optional, can store .pcap files here)
+  captures/
   analysis/
-    analyze.ipynb  (optional notebook for plotting / notes)
+    analyze.ipynb
   README.md
+```
 
 ## 2. Prerequisites 
 	•	Docker Desktop (tested on macOS)

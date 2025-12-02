@@ -111,30 +111,3 @@ Counting the displayed packets for these filters in each scenario provides a sim
 ## 8. Stopping the testbed
 
 	"docker compose down"
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	

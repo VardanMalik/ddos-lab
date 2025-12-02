@@ -21,7 +21,7 @@ ddos-lab/
   captures/        (optional, can store .pcap files here)
   analysis/
     analyze.ipynb  (optional notebook for plotting / notes)
-  README.md```
+  README.md
 
 ## 2. Prerequisites 
 	•	Docker Desktop (tested on macOS)
